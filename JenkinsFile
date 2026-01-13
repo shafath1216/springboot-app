@@ -2,7 +2,7 @@ pipeline {
   agent {
     docker {
       image 'abhishekf5/maven-abhishek-docker-agent:v1'
-      args "-v /var/run/docker.sock:/var/run/docker.sock --group-add 114 --user root"
+      args "-v /var/run/docker.sock:/var/run/docker.sock --user root:114 --privileged"
     }
   }
 
