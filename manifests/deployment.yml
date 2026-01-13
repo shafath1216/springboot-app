@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: spring-boot-app
-        image: shafath061/springboot-app:latest:20
+        image: shafath061/springboot-app:latest
         ports:
         - containerPort: 8080
