@@ -4,7 +4,8 @@ pipeline {
       image 'maven:3.8.6-eclipse-temurin-17' 
       // We add the volume mount for the docker binary itself
       args '--user root -v /var/run/docker.sock:/var/run/docker.sock -v /usr/bin/docker:/usr/bin/docker'
-  }
+         }  
+        }
 
   stages {
 
