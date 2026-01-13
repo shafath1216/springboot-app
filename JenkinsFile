@@ -73,7 +73,15 @@ pipeline {
         }
       }
     }
-
   }
+  post {
+    always {
+      // Returns ownership of the workspace to the jenkins user
+      sh 'chown -R 1000:1000 .'
+    }
+  } 
+
+
+
 }
 
